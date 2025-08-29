@@ -17,7 +17,7 @@ const boardRoute = require('./routes/board.route');
 
 const app = express()
 
-const allowedOrigins = [process.env.FRONTEND_URL_PROD,https://inspic-vercel.vercel.app];
+const allowedOrigins = [process.env.FRONTEND_URL_PROD,'https://inspic-vercel.vercel.app'];
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
